@@ -9,6 +9,6 @@ async def send_daily_quote(bot: Bot, user_id: int):
 def schedule_daily_quotes(bot: Bot, user_id: int):
     scheduler = AsyncIOScheduler()
     # Запуск каждые 5 минут
-    scheduler.add_job(send_daily_quote, 'interval', minutes=1, args=[bot, user_id])
+    scheduler.add_job(send_daily_quote, 'interval', minutes=10, args=[bot, user_id])
     scheduler.start()
 
