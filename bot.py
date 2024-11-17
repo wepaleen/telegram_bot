@@ -7,7 +7,7 @@ import asyncio
 from scheduler import schedule_daily_quotes
 
 # Токен твоего бота от BotFather
-API_TOKEN = "7474934415:AAG8qNuQlaQJxEm2FyvfYE40je7FgSgHZtY"
+API_TOKEN = bottoken
 
 # Инициализация бота и диспетчера
 bot = Bot(token=API_TOKEN)
